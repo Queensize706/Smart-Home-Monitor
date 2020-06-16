@@ -43,8 +43,7 @@ lambda function. The model file and part of packages are stored in S3 rather tha
 
   - Realtime Temperature Data Visualization
 
-![Temperature](img/Temperature.jpg)
-![Temp](img/Temp.gif)
+![Temperature](img/Temperature.jpg)![Temp](https://storage.googleapis.com/luliu001/Temp.gif)
 
   - Realtime Air Quality Data Visualization
 
