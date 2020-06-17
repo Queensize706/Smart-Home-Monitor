@@ -15,7 +15,10 @@ In this project, we designed a smart Home Monitor that could measure, monitor an
 
 To build the entire IoT system of smart home application, we divide system into mainly three parts:
 
-![Problem Formulation](img/ProblemFormulation.jpg)
+<p align="center">
+  <img src="img/ProblemFormulation.jpg" width="450"/>
+</p>
+
 
 * `Local Terminal`, which serves as gateway in our IoT system. The devices as terminal, namely Edison and Raspberry Pi, gathered sensor data and send to cloud components. Specifically, the Edison board has sensors gather environment data while Pi is used to obtain result from motion sensor and camera.
 * `Cloud Computing`, including several cloud service we use.
@@ -27,7 +30,10 @@ To build the entire IoT system of smart home application, we divide system into 
 
 Generally, data is transmitted from sensors on embedded device to cloud storage. And then we call backend service for data processing and machine learning, storing back the result to database. We also host another web server to visualize the data in the database. Besides, our web server is deployed in EC2, so user can access the frontend in the server remotely and also on their phones.
 
-![Data Flow](img/DataFlow.jpg)
+<p align="center">
+  <img src="img/DataFlow.jpg" width="450"/>
+</p>
+
 
 * Edison smart home launcher executes two tasks **simultaneously**:
   * First Task: obtain data every 5 minutes, update data in DynamoDB and trigger auto encoder model.
@@ -37,17 +43,24 @@ Generally, data is transmitted from sensors on embedded device to cloud storage.
 * the structure of storage for our
 lambda function. The model file and part of packages are stored in S3 rather than directly in the lambda function auxiliary storage space. They will only work together when lambda function is called.
 
-![Lambda Function](img/LambdaFunction.jpg)
+<p align="center">
+  <img src="img/LambdaFunction.jpg" width="450"/>
+</p>
 
 * Web application using Flask framework on cloud server:  to exchange the data between the server and the client based on the RESTful API with Flask and AWS DynamoDB.
 
   - Realtime Temperature Data Visualization
 
-![Temperature](img/Temperature.jpg)![Temp](https://storage.googleapis.com/luliu001/Temp.gif)
+  <figure class="half">
+      <img src="img/Temperature.jpg" width="450"/>
+      <img src="https://storage.googleapis.com/luliu001/Temp.gif" width="450"/>
+  </figure>
 
   - Realtime Air Quality Data Visualization
 
-![Air Quality](img/AirQuality.jpg)
+  <p align="center">
+    <img src="img/AirQuality.jpg" width="450"/>
+  </p>
 
 ## Team COCO
 
