@@ -44,17 +44,20 @@ Generally, data is transmitted from sensors on embedded device to cloud storage.
 lambda function. The model file and part of packages are stored in S3 rather than directly in the lambda function auxiliary storage space. They will only work together when lambda function is called.
 
 <p align="center">
-  <img src="img/LambdaFunction.jpg" width="450"/>
+  <img src="img/LambdaFunction.jpg" width="500"/>
 </p>
 
 * Web application using Flask framework on cloud server:  to exchange the data between the server and the client based on the RESTful API with Flask and AWS DynamoDB.
 
   - Realtime Temperature Data Visualization
 
-  <figure class="half">
-      <img src="img/Temperature.jpg" width="450"/>
-      <img src="img/temp.gif" width="450"/>
-  </figure>
+  <p align="center">
+    <img src="img/Temperature.jpg" width="500"/>
+  </p>
+
+  <p align="center">
+    <img src="img/temp.gif" width="500"/>
+  </p>
 
   - Realtime Air Quality Data Visualization
 
